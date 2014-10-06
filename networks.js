@@ -6,29 +6,29 @@ var hex = function(hex) {
 
 exports.livenet = {
   name: 'livenet',
-  magic: hex('c0c0c0c0'),
-  addressVersion: 0x1E,
-  privKeyVersion: 158,
-  P2SHVersion: 5,
+  magic: hex('af4576ee'),
+  addressVersion: 0x32,
+  privKeyVersion: 178,
+  P2SHVersion: 9,
   hkeyPublicVersion: 0x0488b21e,
   hkeyPrivateVersion: 0x0488ade4,
   genesisBlock: {
-    hash: hex('9156352C1818B32E90C9E792EFD6A11A82FE7956A630F03BBEE236CEDAE3911A'),
-    merkle_root: hex('696AD20E2DD4365C7459B4A4A5AF743D5E92C6DA3229E6532CD605F6533F2A5B'),
+    hash: hex('85A41EFACF83758FF7328FB3F0EF19F64B313DEAA0418493B520C0E4FD0F0000'),
+    merkle_root: hex('DA6964FD87C79D6C9A288EF8BBCE4CDFFDE12212DC3015C2462FE9183CDB753F'),
     height: 0,
-    nonce: 99943,
+    nonce: 2092903596,
     version: 1,
     prev_hash: buffertools.fill(new Buffer(32), 0),
-    timestamp: 1386325540,
-    bits: 504365040,
+    timestamp: 1393164995,
+    bits: 504365055,
   },
   dnsSeeds: [
-    'seed.dogecoin.com',
-    'seed.mophides.com',
-    'seed.dglibrary.org',
-    'seed.dogechain.info'
+    'seed1.myriadcoin.org',
+    'seed2.myriadcoin.org',
+    'seed3.myriadcoin.org',
+    'seed4.myriadcoin.org'
   ],
-  defaultClientPort: 22556
+  defaultClientPort: 10889
 };
 
 exports.mainnet = exports.livenet;
